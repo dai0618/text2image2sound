@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 279.0, 102.0, 640.0, 506.0 ],
+		"rect" : [ 279.0, 76.0, 640.0, 532.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,48 +40,50 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-32",
-					"maxclass" : "live.scope~",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 254.0, 244.0, 184.0, 68.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-28",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 278.0, 118.0, 35.0, 22.0 ],
-					"text" : "open"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 43.0, 244.0, 47.0, 22.0 ],
-					"text" : "sfplay~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-10",
-					"maxclass" : "newobj",
+					"id" : "obj-5",
+					"maxclass" : "toggle",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 43.0, 199.0, 71.0, 22.0 ],
-					"text" : "fromsymbol"
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 309.0, 95.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 671.0, 61.0, 100.0, 100.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"buffername" : "1003_loop",
+					"id" : "obj-64",
+					"maxclass" : "waveform~",
+					"numinlets" : 5,
+					"numoutlets" : 6,
+					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
+					"patching_rect" : [ 126.333333333333314, 381.298634648323059, 201.666666666666686, 83.000000834465027 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 671.0, 183.999999165534973, 515.333333611488342, 289.000000834465027 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-3",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "player.maxpat",
+					"numinlets" : 3,
+					"numoutlets" : 4,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "", "float", "int" ],
+					"patching_rect" : [ 35.0, 179.0, 293.0, 137.0 ],
+					"viewvisibility" : 1
 				}
 
 			}
@@ -92,7 +94,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 633.5, 90.0, 71.0, 22.0 ],
+					"patching_rect" : [ 435.5, 102.0, 71.0, 22.0 ],
 					"text" : "fromsymbol"
 				}
 
@@ -104,7 +106,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 633.5, 52.0, 109.0, 22.0 ],
+					"patching_rect" : [ 435.5, 64.0, 109.0, 22.0 ],
 					"text" : "OSC-route /picture"
 				}
 
@@ -116,7 +118,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 633.5, 20.0, 97.0, 22.0 ],
+					"patching_rect" : [ 435.5, 32.0, 97.0, 22.0 ],
 					"text" : "udpreceive 7400"
 				}
 
@@ -128,24 +130,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 633.5, 142.0, 518.0, 515.0 ],
+					"patching_rect" : [ 435.5, 154.0, 518.0, 515.0 ],
 					"pic" : "1.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 104.5, 61.0, 518.0, 515.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 124.0, 199.0, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 650.0, 61.0, 164.0, 164.0 ]
+					"presentation_rect" : [ 104.5, 61.0, 544.0, 509.0 ]
 				}
 
 			}
@@ -155,9 +143,9 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 43.0, 337.0, 45.0, 45.0 ],
+					"patching_rect" : [ 35.0, 381.298634648323059, 45.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 848.5, 61.0, 164.0, 164.0 ]
+					"presentation_rect" : [ 813.5, 61.0, 100.0, 100.0 ]
 				}
 
 			}
@@ -168,7 +156,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 43.0, 156.0, 105.0, 22.0 ],
+					"patching_rect" : [ 35.0, 95.0, 105.0, 22.0 ],
 					"text" : "OSC-route /sound"
 				}
 
@@ -180,7 +168,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 43.0, 93.0, 97.0, 22.0 ],
+					"patching_rect" : [ 35.0, 32.0, 97.0, 22.0 ],
 					"text" : "udpreceive 7400"
 				}
 
@@ -190,30 +178,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"order" : 0,
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 1 ],
-					"order" : 1,
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"order" : 2,
-					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -233,15 +197,31 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
+					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"source" : [ "obj-28", 0 ]
+					"destination" : [ "obj-64", 0 ],
+					"source" : [ "obj-3", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 1 ],
+					"order" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"order" : 1,
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -254,22 +234,22 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
+					"destination" : [ "obj-3", 2 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "1.png",
-				"bootpath" : "~/Desktop/project/text2sound/text2sound/picture",
-				"patcherrelativepath" : "../text2sound/picture",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "OSC-route.mxo",
 				"type" : "iLaX"
+			}
+, 			{
+				"name" : "player.maxpat",
+				"bootpath" : "~/Desktop/project/text2sound/Max",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
 			}
  ],
 		"autosave" : 0

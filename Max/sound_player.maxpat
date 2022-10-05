@@ -213,21 +213,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 209.00149542093277, 287.30189498162531, 84.0, 22.0 ],
-					"text" : "set #0_loop"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"buffername" : "#0_loop",
-					"id" : "obj-64",
-					"maxclass" : "waveform~",
-					"numinlets" : 5,
-					"numoutlets" : 6,
-					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
-					"patching_rect" : [ 209.00149542093277, 341.298634648323059, 265.333333611488342, 92.000000834465027 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 13.00149542093277, 13.038248786847021, 773.333333611488342, 396.000000834465027 ]
+					"presentation_rect" : [ 32.834828674793243, 58.30189498162531, 84.0, 22.0 ],
+					"text" : "set #0_loop"
 				}
 
 			}
@@ -335,6 +323,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"patching_rect" : [ 182.834828674793243, 191.044231497331111, 105.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 32.834828674793243, 26.044231497331111, 105.0, 22.0 ],
 					"text" : "buffer~ #0_loop"
 				}
 
@@ -383,6 +373,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 507.997617994604752, 319.344471623405411, 98.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 32.997617994604752, 92.344471623405411, 98.0, 22.0 ],
 					"text" : "groove~ #0_loop"
 				}
 
@@ -574,7 +566,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-64", 0 ],
+					"destination" : [ "obj-13", 0 ],
 					"source" : [ "obj-66", 0 ]
 				}
 

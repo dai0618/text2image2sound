@@ -208,7 +208,7 @@ def tex2sound(path):
     print(f'The sample has been saved @ {save_path}')
 
     send_path = save_path.replace('.','',1)
-    send_track_path = 'open /Users/dai/Desktop/project/text2sound/text2sound'+ send_path
+    send_track_path = '/Users/dai/Desktop/project/text2sound/text2sound'+ send_path
     sound_route = "/sound"
     osc_send(send_track_path, sound_route)
 
